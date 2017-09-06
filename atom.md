@@ -48,5 +48,16 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 **`node -v`가 정상적으로 작동하는걸 확인했다면**
 
-`node-sass` npm패키지 설치  
+**node-sass** npm패키지 설치  
 `sudo npm install node-sass -g`
+
+macOS는 `sudo`없이 실행
+
+**macOS**에서 설치가 안 될 경우
+
+```
+sudo rm -rf /usr/local/lib/node_modules
+brew uninstall node
+brew install node
+npm install node-sass -g
+```
